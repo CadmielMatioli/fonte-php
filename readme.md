@@ -8,32 +8,32 @@
     
 ## Heroku App Tutorial in Laravel 5.8.*
  
-###### ProcFile.
+#### Procfile.
  
     Primeiro Criei um arquivo Procfile na pasta raiz do Laravel
     Depois eu dicionei o seguinte codigo dentro dela "web: vendor/bin/heroku-php-apache2 public/"
      
-###### Inserido comandos para iniciar depois do laravel instalado e o Procfile criado
+#### Inserido comandos para iniciar depois do laravel instalado e o Procfile criado
   
     heroku login
     heroku create
    
-###### Não utilizei o git init ja tinha a develop então fui direto para o comando.
+#### Não utilizei o git init ja tinha a develop então fui direto para o comando.
    
     git push heroku master 
     
-###### Então foi adicionado meu repositório no app project no heroku
+#### Então foi adicionado meu repositório no app project no heroku
     
    https://shielded-dusk-86282.herokuapp.com/
    
-###### Para adicionar o Database eu coloquei o comando.
+#### Para adicionar o Database eu coloquei o comando.
    
     heroku addons:create heroku-postgresql:hobby-dev
     
    Voce consegue visualizar a sua database em Heroku->myapp->Resources
    Depois de acessar sua database ja criada vá em Settings->ViewCredentials...
    
-###### Na minha .env do repositório local eu coloquei o seguinte comando.
+#### Na minha .env do repositório local eu coloquei o seguinte comando.
    
     DB_CONNECTION=pgsql
     DB_HOST= 12-3-4-5-.asd-1.amazonaws.com
@@ -42,7 +42,7 @@
     DB_USERNAME= seu-nome-de-usuário(nome)
     DB_PASSWORD=sua-senha(nome)
     
-###### Feito isso coloquei o seguinte comando.
+#### Feito isso coloquei o seguinte comando.
    
     heroku run php /app/artisan migrate --seed
    Como resposta...

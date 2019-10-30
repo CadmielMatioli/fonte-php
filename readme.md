@@ -45,7 +45,7 @@
 #### Feito isso coloquei o seguinte comando.
    
     heroku run php /app/artisan migrate --seed
-   Como resposta...
+#### Como resposta...
    
     Do you really wish to run this command? (yes/no) [no]: y
     
